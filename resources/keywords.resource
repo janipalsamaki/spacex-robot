@@ -1,6 +1,6 @@
 *** Settings ***
-Library         RequestsLibrary
-Variables       variables.py
+Library     RequestsLibrary
+Variables   variables.py
 
 *** Keywords ***
 Setup
