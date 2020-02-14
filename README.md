@@ -256,8 +256,51 @@ Windows:
 scripts\run.bat
 ```
 
+Example response (cropped):
+
+```json
+{
+    "crew": null,
+    "details": "This mission will launch the third batch of Starlink version 1.0 satellites, from SLC-40, Cape Canaveral AFS. It is the fourth Starlink launch overall. The satellites will be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude of 550 km. The booster for this mission is expected to land on OCISLY.",
+    "flight_number": 89,
+    "is_tentative": false,
+    "last_date_update": "2020-01-29T14:07:07.000Z",
+    "last_ll_launch_date": "2020-01-29T14:06:00.000Z",
+    "last_ll_update": "2020-01-29T14:07:07.000Z",
+    ...
+    "mission_id": [],
+    "mission_name": "Starlink 3",
+    "rocket": {
+        "fairings": {
+            "recovered": true,
+            "recovery_attempt": true,
+            "reused": false,
+            "ship": "GOMSTREE"
+        },
+        "first_stage": {
+            "cores": [
+                {
+                    "block": 5,
+                    "core_serial": "B1051",
+                    "flight": 3,
+                    "gridfins": true,
+                    "land_success": true,
+                    "landing_intent": true,
+                    "landing_type": "ASDS",
+                    "landing_vehicle": "OCISLY",
+                    "legs": true,
+                    "reused": true
+                }
+            ]
+        },
+        "rocket_id": "falcon9",
+        "rocket_name": "Falcon 9",
+        ...
+}
+```
+
 ## Summary
 
-You executed a simple robot that fetches data from an API, congratulations!
+You executed a simple robot that fetches data from an API. Congratulations!
 
-During the process, you learned some basic features of the `RequestsLibrary`.
+During the process, you learned some basic features of the [RequestsLibrary](https://bulkan.github.io/robotframework-requests/).
