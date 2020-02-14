@@ -4,6 +4,8 @@ title: SpaceX robot
 description: Tutorial for creating a software robot for fetching data from SpaceX API.
 ---
 
+![SpaceX logo](spacex-logo.png)
+
 This simple robot fetches and logs latest launch data from [SpaceX API](https://github.com/r-spacex/SpaceX-API) using [RequestsLibrary](https://bulkan.github.io/robotframework-requests/).
 
 ## Prerequisites
