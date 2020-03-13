@@ -159,7 +159,7 @@ Documentation   SpaceX robot. Retrieves data from SpaceX API. Demonstrates how
 ...             to use RequestsLibrary (create session, get response, validate
 ...             response status, pretty-print, get response as text, get
 ...             response as JSON, access JSON properties, etc.).
-Resource        keywords.resource
+Resource        keywords.robot
 Suite Setup     Setup
 Suite Teardown  Teardown
 
@@ -173,9 +173,9 @@ Log latest launch info
 
 Inside the `spacex-robot` directory, create a directory by name `resources`.
 
-Inside the `resources` directory, create a file by name `keywords.resource`.
+Inside the `resources` directory, create a file by name `keywords.robot`.
 
-Paste the following Robot Framework code in the `keywords.resource` file:
+Paste the following Robot Framework code in the `keywords.robot` file:
 
 ```robot
 *** Settings ***
@@ -231,7 +231,7 @@ Your directory structure should look like this:
 spacex-robot
 ├── requirements.txt
 ├── resources
-│   └── keywords.resource
+│   └── keywords.robot
 ├── scripts
 │   ├── prepare.sh (or prepare.bat)
 │   └── run.sh (or run.bat)

@@ -3,7 +3,7 @@ Documentation   SpaceX robot. Retrieves data from SpaceX API. Demonstrates how
 ...             to use RequestsLibrary (create session, get response, validate
 ...             response status, pretty-print, get response as text, get
 ...             response as JSON, access JSON properties, etc.).
-Resource        keywords.resource
+Resource        keywords.robot
 Suite Setup     Setup
 Suite Teardown  Teardown
 
