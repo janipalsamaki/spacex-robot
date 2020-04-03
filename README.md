@@ -1,12 +1,12 @@
 ---
-id: spacex-robot
-title: SpaceX robot
-description: Tutorial for creating a software robot for fetching data from SpaceX API.
+id: http-api-robot-tutorial
+title: HTTP API robot tutorial
+description: Tutorial for creating a software robot for fetching data from SpaceX API using Robot Framework and RPA Framework.
 ---
 
 ![SpaceX logo](spacex-logo.png)
 
-This simple software robot fetches and logs latest launch data from [SpaceX API](https://github.com/r-spacex/SpaceX-API) using [RPA Framework](https://pypi.org/project/rpa-framework/).
+This simple software robot fetches and logs the latest launch data from [SpaceX API](https://github.com/r-spacex/SpaceX-API) using [RPA Framework](https://rpaframework.org/).
 
 ## Prerequisites
 
@@ -55,13 +55,13 @@ pip install robocode
 ## Initialize the software robot directory
 
 ```bash
-robo init spacex-robot
+robo init http-api
 ```
 
 Navigate to the directory:
 
 ```bash
-cd spacex-robot
+cd http-api
 ```
 
 ## Install RPA Framework
@@ -76,8 +76,8 @@ Paste the following Robot Framework code in the `tasks/robot.robot` file:
 
 ```robot
 *** Settings ***
-Documentation   SpaceX robot. Retrieves data from SpaceX API. Demonstrates how
-...             to use RPA.HTTP (create session, get response, validate
+Documentation   HTTP API robot. Retrieves data from SpaceX API. Demonstrates
+...             how to use RPA.HTTP (create session, get response, validate
 ...             response status, pretty-print, get response as text, get
 ...             response as JSON, access JSON properties, etc.).
 Resource        keywords.robot
@@ -139,7 +139,7 @@ SPACEX_API_LATEST_LAUNCHES = "/launches/latest"
 ## Wrap the robot
 
 ```bash
-robo wrap --force
+robo wrap
 ```
 
 ## Run the robot
